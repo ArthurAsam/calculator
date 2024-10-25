@@ -1,0 +1,151 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+* {
+  margin: 0; 
+  padding: 0; 
+  /* border: 1px solid red;  */
+}
+
+/* CSS Reset above ^*/
+
+.outer-container {
+  width: 450px; 
+  height: 600px; 
+  border: 3px solid black; 
+  border-radius: 10px; 
+  background-color: #D4D5DA;
+  margin: auto; 
+  position: fixed; 
+  top: 0; 
+  bottom: 0; 
+  left: 0;
+  right: 0; 
+}
+
+header {
+  display: flex; 
+  justify-content: space-between ;
+  height: 70px; 
+}
+.solar-panel {
+  width: 120px; 
+  height: 40px; 
+  border: 1px solid  #60636D; 
+  border-radius: 6px; 
+  background-color:#392203;
+  margin: 20px 20px 0 0; 
+}
+
+.screen {
+  width: 98%; 
+  height: 130px; 
+  background-color: #CFE2E6;
+  border-top: 15px solid #60636D;
+  border-left: 10px solid #60636D; 
+  border-right: 10px solid #60636D; 
+  border-bottom: 15px solid#60636D; 
+  border-radius: 5px; 
+  box-shadow: inset 5px 5px 7px 1px; 
+  margin: auto; 
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px; 
+  font-weight: 700;
+  margin-top: 12px; 
+  margin-left: 20px; 
+}
+
+.btn-wrapper {
+  display: flex; 
+  justify-content: center;
+  gap: 20px; 
+  height: 18rem; 
+  margin-top: 40px; 
+
+}
+
+
+.btn-container-main {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px;
+  width: 210px; 
+  height: 295px; 
+}
+
+
+div .main {
+  width: 50px; 
+  padding: 15px 0; 
+  height: 60px; 
+  flex: auto;  
+  font-size: 45px; 
+  font-weight: 500;
+  box-shadow: 5px 5px 5px black; 
+  border-radius: 10px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-container-left, 
+.btn-container-right{
+  width: 60px; 
+  display: flex; 
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.btn-container-left button {
+  flex-grow: .5;
+  font-size: 18px; 
+  font-weight: 700;
+}
+
+.btn-container-right button{
+  flex-grow: 1;
+  font-size: 25px; 
+  font-weight: 600;
+}
+
+#clear {
+  flex-grow: 1
+  
+}
+
+#allClear{
+  flex-grow: 1.5; 
+}
+
+.red-btn{
+  background-color: #AD4F69;
+  font-size: 30px; 
+}
+
+button {
+  color: #FEFEFE;
+  background-color: #3A3A45;
+  font-family: "Changa", sans-serif;
+  box-shadow: 5px 5px 5px black; 
+  border-radius: 10px;
+  
+}
+
+button:active {
+  box-shadow: 0 5px #D4D5DA; 
+  transform: translateY(4px);
+}
+
+#arrow{
+  font-size: 15px; 
+  flex-grow: .5;
+}
+
