@@ -18,6 +18,7 @@
   border: 3px solid black; 
   border-radius: 10px; 
   background-color: #D4D5DA;
+  box-shadow: 5px 10px 20px 1px black;
   margin: auto; 
   position: fixed; 
   top: 0; 
@@ -40,6 +41,8 @@ header {
   margin: 20px 20px 0 0; 
 }
 
+
+
 .screen {
   width: 98%; 
   height: 130px; 
@@ -51,6 +54,12 @@ header {
   border-radius: 5px; 
   box-shadow: inset 5px 5px 7px 1px; 
   margin: auto; 
+  font-size: 73px; 
+  display: flex; 
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: Digital-7 Mono; 
+  padding-right: 10px; 
 }
 
 h1 {
@@ -116,12 +125,12 @@ div .main {
   font-weight: 600;
 }
 
-#clear {
+button[data-action="clear"] {
   flex-grow: 1
   
 }
 
-#allClear{
+button[data-action="all-clear"]{
   flex-grow: 1.5; 
 }
 
@@ -144,8 +153,17 @@ button:active {
   transform: translateY(4px);
 }
 
-#arrow{
+button[data-action="backspace"]{
   font-size: 15px; 
   flex-grow: .5;
+}
+
+.btn-wrapper .selected {
+  border: 2px solid #D4D5DA;
+}
+
+.hideOverflow{
+  overflow: hidden;
+  font-size: 2rem;
 }
 
