@@ -94,23 +94,23 @@ function DynamicallyMinimizeFont(){
   let removePx = currentFontSize.substring(-2, 2)
 
   if (currentFontSize <= '80px' && currentFontSize > '55px'){
-    let newSize = `${removePx - 5}px`
+    let newSize = `${removePx - 6}px`
     screen.style.fontSize = newSize
 
   }
   else if (currentFontSize <= '55px' && currentFontSize > '42px'){
-    newSize = `${removePx - 2.2}px`
+    newSize = `${removePx - 2.5}px`
 
     screen.style.fontSize = newSize
   }  
   else if (currentFontSize <= '42px' && currentFontSize > '35px'){
 
-    newSize = `${removePx - 1.5}px`
+    newSize = `${removePx - 2.0}px`
     screen.style.fontSize = newSize
   }
   else if (currentFontSize <= '35px'){
 
-    newSize = `${removePx - .5}px`
+    newSize = `${removePx - .8}px`
     screen.style.fontSize = newSize
 
   }
@@ -204,7 +204,7 @@ function allClear(){
   operator = ''; 
   displayCounter = 0 ; 
   screen.textContent = '0'
-  screen.style.fontSize = `${73}px`
+  screen.style.fontSize = `${68}px`
   btnArray.forEach(btn => {
       btn.classList.remove('selected')
   })

@@ -54,11 +54,11 @@ header {
   border-radius: 5px; 
   box-shadow: inset 5px 5px 7px 1px; 
   margin: auto; 
-  font-size: 73px; 
+  font-size: 68px; 
   display: flex; 
   justify-content: flex-end;
   align-items: flex-end;
-  font-family: Digital-7 Mono; 
+  /* font-family: Digital-7 Mono;  */
   padding-right: 10px; 
 }
 
